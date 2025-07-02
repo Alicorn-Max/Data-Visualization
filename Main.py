@@ -1,8 +1,6 @@
-import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import streamlit as st
 #barplot
 #res = sns.barplot(x="am", y="mpg", data=mtcars, palette="Set2")
 
@@ -35,6 +33,4 @@ palette = sns.cubehelix_palette(rot=.2,gamma=.5, dark=.25,light=1.5, reverse=Tru
 ax=sns.jointplot(x="petal_length", y="petal_width", data=iris, hue="species", palette=palette, height=20, marker=(4,1,0), s=500)
 ax.set_axis_labels(xlabel='Petal Length', ylabel='Petal Width', fontsize=20)
 
-
-st.header("Here is the visualization of the Iris dataset!")
-st.pyplot(plt.gcf())
+plt.show()
