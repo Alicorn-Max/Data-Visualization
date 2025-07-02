@@ -3,9 +3,6 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 import streamlit as st
-pd.set_option('display.max_columns', None)
-mtcars = pd.read_csv(r"C:\Users\tsara\Downloads\mtcars.csv")
-from sklearn import datasets
 #barplot
 #res = sns.barplot(x="am", y="mpg", data=mtcars, palette="Set2")
 
